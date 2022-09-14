@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccess
+namespace DataAccess.MemoryDaos
 {
-    public class ProductDao
+    internal class ProductDao : IDao<Product>
     {
         private IList<Product> _products = new List<Product>();
 
@@ -39,6 +39,21 @@ namespace DataAccess
         public Product? GetById(int id)
         {
             return _products.SingleOrDefault(p => p.Id == id);
+        }
+
+        public void Update(Product entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Create(Product entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete(Product entity)
+        {
+            throw new NotImplementedException();
         }
     }
 }

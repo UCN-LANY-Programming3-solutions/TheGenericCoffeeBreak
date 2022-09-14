@@ -1,4 +1,5 @@
 using DataAccess;
+using DataAccess.MemoryDaos;
 using Model;
 
 namespace DaoTests
@@ -9,7 +10,7 @@ namespace DaoTests
         public void TestGetOrderSuccess()
         {
             // Arrange
-            OrderDao orderDao = new OrderDao();
+            IDao<Order> orderDao = DaoFactory.CreateOrderDao();
 
             // Act
             Order? test = orderDao.GetById(2);
@@ -22,17 +23,17 @@ namespace DaoTests
         public void TestDeleteOrderSuccess()
         {
             // Arrange
-            OrderDao dao = new OrderDao();
-            Order? test = dao.GetById(1);
+            IDao<Order> orderDao = DaoFactory.CreateOrderDao();
+            Order? test = orderDao.GetById(1);
 
             // Act
             if (test != null)
             {
-                dao.Delete(test);
+                orderDao.Delete(test);
             }
 
             // Assert
-            Assert.Null(dao.GetById(1));
+            Assert.Null(orderDao.GetById(1));
         }
     }
 }

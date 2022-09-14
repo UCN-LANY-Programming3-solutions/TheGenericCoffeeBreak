@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccess
+namespace DataAccess.MemoryDaos
 {
-    public class OrderDao
+    internal class OrderDao : IDao<Order>
     {
         private int _currentId = 3;
 
@@ -34,7 +34,7 @@ namespace DataAccess
             order3.Orderlines.Add(new Orderline(2, product1));
 
             _orders.Add(order1);
-            _orders.Add(order2);    
+            _orders.Add(order2);
             _orders.Add(order3);
         }
 
@@ -67,7 +67,7 @@ namespace DataAccess
                 foreach (var orderline in order.Orderlines)
                 {
                     old.Orderlines.Add(orderline);
-                }                
+                }
             }
         }
 
