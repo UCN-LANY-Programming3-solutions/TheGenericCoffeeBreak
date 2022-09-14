@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{73C210C0-5A47-455F-9EEA-974D6B77BCF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{E44C1E48-C758-4E63-B8CF-3BB33D0AA880}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaoTests", "DaoTests\DaoTests.csproj", "{47475870-8358-4795-9E0B-33D6FE373B75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73C210C0-5A47-455F-9EEA-974D6B77BCF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73C210C0-5A47-455F-9EEA-974D6B77BCF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73C210C0-5A47-455F-9EEA-974D6B77BCF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73C210C0-5A47-455F-9EEA-974D6B77BCF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E44C1E48-C758-4E63-B8CF-3BB33D0AA880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E44C1E48-C758-4E63-B8CF-3BB33D0AA880}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E44C1E48-C758-4E63-B8CF-3BB33D0AA880}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E44C1E48-C758-4E63-B8CF-3BB33D0AA880}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47475870-8358-4795-9E0B-33D6FE373B75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47475870-8358-4795-9E0B-33D6FE373B75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47475870-8358-4795-9E0B-33D6FE373B75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47475870-8358-4795-9E0B-33D6FE373B75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3AA93C92-E2E8-4A1D-9CD3-8EA8F22AEF77}
+	EndGlobalSection
+EndGlobal
